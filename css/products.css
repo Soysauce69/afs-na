@@ -1,0 +1,97 @@
+
+
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-kicker {
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.page-description {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.6rem;
+}
+
+.product-card {
+  background: #fffaf3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(229, 206, 180, 0.9);
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.product-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-body {
+  padding: 1rem 1.1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.product-name {
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.4rem;
+}
+
+.product-price {
+  font-weight: 700;
+  color: var(--accent-terracotta-dark);
+}
+
+.product-origin {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.product-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.3rem;
+  font-size: 0.78rem;
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  background: rgba(196, 106, 61, 0.06);
+  color: var(--accent-terracotta-dark);
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(75, 54, 37, 0.2);
+  border-color: rgba(196, 106, 61, 0.5);
+}
+
